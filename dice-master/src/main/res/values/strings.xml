@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Dice Master</string>
+    <string name="main_screen_single_throw_btn">Tirada Única</string>
+    <string name="main_screen_single_throw_expl">Realiza una sola tirada de cualquier dado</string>
+    <string name="main_screen_multiple_throws_btn">Varias Tiradas</string>
+    <string name="main_screen_multiple_throws_expl">Realiza tiradas de varios dados, especificando modificadores</string>
+    <string name="main_screen_scores_btn">Puntuaciones</string>
+    <string name="main_screen_scores_expl">Lleva las puntuaciones de cualquier juego</string>
 </resources>

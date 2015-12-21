@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="main_screen_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_main_screen</item>
+        <item name="fontPath">fonts/slabo.ttf</item>
+    </style>
+
 </resources>

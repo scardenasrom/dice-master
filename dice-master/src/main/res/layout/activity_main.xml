@@ -4,8 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_horizontal_margin"
     tools:context="com.herkiusdev.dicemaster.MainActivity"
     >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_screen_background"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/main_screen_btn_margins"
+        android:layout_marginRight="@dimen/main_screen_btn_margins"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_screen_single_throw_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_screen_button"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_content_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_content_margin"
+                android:text="@string/main_screen_single_throw_btn"
+                style="@style/main_screen_text"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_screen_single_throw_expl"
+                style="@style/main_screen_text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_screen_multiple_throws_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_screen_button"
+            android:clickable="true"
+            android:layout_marginBottom="@dimen/activity_content_margin"
+            android:layout_marginTop="@dimen/activity_content_margin"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_content_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_content_margin"
+                android:text="@string/main_screen_multiple_throws_btn"
+                style="@style/main_screen_text"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_screen_multiple_throws_expl"
+                style="@style/main_screen_text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_screen_scores_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_screen_button"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_content_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_content_margin"
+                android:text="@string/main_screen_scores_btn"
+                style="@style/main_screen_text"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_screen_scores_expl"
+                style="@style/main_screen_text"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

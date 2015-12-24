@@ -12,7 +12,7 @@
         android:id="@+id/single_throw_d20_btn"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:src="@drawable/d20purple"
+        android:src="@drawable/d20whitetransparent"
         android:scaleType="centerInside"
         android:background="@drawable/round_transparent_button"
         android:layout_centerInParent="true"

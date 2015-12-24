@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.herkiusdev.dicemaster.activity.ScoresActivity_;
 import com.herkiusdev.dicemaster.activity.SingleThrowActivity_;
 
 import org.androidannotations.annotations.AfterViews;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Click(R.id.main_screen_scores_box)
     public void scoresClick() {
-
+        ScoresActivity_.intent(this).start();
     }
 
 }

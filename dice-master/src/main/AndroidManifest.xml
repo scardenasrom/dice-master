@@ -22,6 +22,8 @@
         </activity>
 
         <activity android:name=".activity.SingleThrowActivity_" />
+        <activity android:name=".activity.ScoresActivity_" />
+        <activity android:name=".activity.OneVsOneActivity_" />
 
     </application>
 

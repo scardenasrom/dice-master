@@ -3,8 +3,15 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_content_margin">8dp</dimen>
-    <!-- Custom measurements -->
-    <dimen name="main_screen_btn_margins">32dp</dimen>
+    <!-- Tabs measurements -->
+    <dimen name="height_custom_tab_layout">70dp</dimen>
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="height_tab_indicator">3dp</dimen>
     <!-- Text Sizes -->
-    <dimen name="text_size_main_screen">18sp</dimen>
+    <dimen name="text_size_toolbar_title">28sp</dimen>
+    <dimen name="text_size_main_screen">22sp</dimen>
+    <dimen name="text_size_tab_text">18sp</dimen>
 </resources>

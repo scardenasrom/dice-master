@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_content_margin"
+            android:background="@drawable/normal_button"
+            android:text="@string/board_one_vs_one"
+            style="@style/normal_button"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_content_margin"
+            android:background="@drawable/normal_button"
+            android:text="@string/board_several_players"
+            style="@style/normal_button"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

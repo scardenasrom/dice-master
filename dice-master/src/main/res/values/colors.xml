@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#607D8B</color>
-    <color name="colorPrimaryDark">#455A64</color>
-    <color name="colorAccent">#00B0FF</color>
-    <color name="color_grey_transparent">#BB607D8B</color>
-    <color name="color_grey_borders">#455A64</color>
-    <color name="holo_light_blue_transparent">#BB00B0FF</color>
+    <color name="color_primary">#FF9800</color>
+    <color name="color_primary_dark">#F57C00</color>
+    <color name="color_accent">#00B0FF</color>
+    <color name="color_primary_transparent">#BBFF9800</color>
+    <color name="color_primary_dark_transparent">#BBF57C00</color>
+    <color name="holo_accent">#BB00B0FF</color>
+    <color name="color_text_primary">#FFFFFF</color>
 </resources>

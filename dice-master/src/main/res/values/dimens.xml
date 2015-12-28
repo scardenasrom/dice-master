@@ -13,5 +13,5 @@
     <!-- Text Sizes -->
     <dimen name="text_size_toolbar_title">28sp</dimen>
     <dimen name="text_size_main_screen">22sp</dimen>
-    <dimen name="text_size_tab_text">18sp</dimen>
+    <dimen name="text_size_tab_text">14sp</dimen>
 </resources>

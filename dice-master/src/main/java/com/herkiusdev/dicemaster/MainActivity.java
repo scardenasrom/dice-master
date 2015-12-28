@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.herkiusdev.dicemaster.adapter.ViewPagerAdapter;
+import com.herkiusdev.dicemaster.fragment.AboutFragment_;
 import com.herkiusdev.dicemaster.fragment.BoardFragment_;
 import com.herkiusdev.dicemaster.fragment.RPGFragment_;
 import com.herkiusdev.dicemaster.util.FadePageTransformer;
@@ -58,19 +59,25 @@ public class MainActivity extends AppCompatActivity {
         final ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new BoardFragment_(), getText(R.string.board_fragment_name).toString());
         adapter.addFragment(new RPGFragment_(), getText(R.string.rpg_fragment_name).toString());
+        adapter.addFragment(new AboutFragment_(), getText(R.string.about_fragment_name).toString());
         viewPager.setAdapter(adapter);
     }
 
     private void setupTabIcons() {
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
-        tabOne.setText(getText(R.string.board_fragment_name).toString().toUpperCase());
+        tabOne.setText(getText(R.string.board_fragment_name).toString());
         tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_board_gaming, 0, 0);
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
-        tabTwo.setText(getText(R.string.rpg_fragment_name).toString().toUpperCase());
+        tabTwo.setText(getText(R.string.rpg_fragment_name).toString());
         tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_rpg_gaming, 0, 0);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
+
+        TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
+        tabThree.setText(getText(R.string.about_fragment_name).toString());
+        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_about, 0, 0);
+        tabLayout.getTabAt(2).setCustomView(tabThree);
 
         tabLayout.getTabAt(1).select();
         tabLayout.getTabAt(0).select();

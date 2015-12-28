@@ -6,4 +6,6 @@
     <string name="board_several_players">Varios Jugadores</string>
     <!-- RPG Fragment -->
     <string name="rpg_fragment_name">Juegos de Rol</string>
+    <!-- About Fragment -->
+    <string name="about_fragment_name">Sobre</string>
 </resources>

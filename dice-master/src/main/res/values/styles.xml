@@ -22,7 +22,7 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/color_text_primary</item>
         <item name="android:textSize">@dimen/text_size_main_screen</item>
-        <item name="fontPath">fonts/slabo.ttf</item>
+        <item name="fontPath">fonts/GloriaHallelujah.ttf</item>
     </style>
 
 </resources>

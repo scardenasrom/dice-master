@@ -66,17 +66,17 @@ public class MainActivity extends AppCompatActivity {
     private void setupTabIcons() {
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
         tabOne.setText(getText(R.string.board_fragment_name).toString());
-        tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_board_gaming, 0, 0);
+        tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.selector_board_gaming, 0, 0);
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
         tabTwo.setText(getText(R.string.rpg_fragment_name).toString());
-        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_rpg_gaming, 0, 0);
+        tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.selector_rpg_gaming, 0, 0);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
 
         TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
         tabThree.setText(getText(R.string.about_fragment_name).toString());
-        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_about, 0, 0);
+        tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.selector_about, 0, 0);
         tabLayout.getTabAt(2).setCustomView(tabThree);
 
         tabLayout.getTabAt(1).select();

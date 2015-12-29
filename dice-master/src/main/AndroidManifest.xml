@@ -4,6 +4,8 @@
     package="com.herkiusdev.dicemaster"
     >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".DiceMasterApplication_"
         android:allowBackup="true"

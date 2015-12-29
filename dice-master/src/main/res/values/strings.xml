@@ -6,6 +6,35 @@
     <string name="board_several_players">Varios Jugadores</string>
     <!-- RPG Fragment -->
     <string name="rpg_fragment_name">Juegos de Rol</string>
+    <string name="rpg_fragment_single_throw">Tirada Única</string>
+    <string name="rpg_fragment_multiple_throws">Varias Tiradas</string>
+    <string name="rpg_fragment_initiative">Tabla de Iniciativa</string>
+    <string name="rpg_fragment_critics_and_fumbles">Críticos y Pifias</string>
     <!-- About Fragment -->
     <string name="about_fragment_name">Sobre</string>
+    <!-- Cards -->
+    <string name="card_author_title">Sobre el Autor</string>
+    <string name="card_author_text">La programación, y el diseño de la aplicación corren a cargo de Sergio Cárdenas Romero, Ingeniero Técnico
+        en Informática de Sistemas por la Escuela Técnica Superior de Ingeniería Informática de la Universidad de Sevilla.</string>
+    <string name="card_author_button">Accede a su currículum online: </string>
+    <string name="card_author_url"></string>
+    <string name="card_photos_title">Fotografías</string>
+    <string name="card_photos_text">Las fotografías que se usan en esta aplicación han sido tomadas por Gonzalo Ruíz Corchero.</string>
+    <string name="card_photos_button">Accede a su portafolios digital en DeviantArt: </string>
+    <string name="card_photos_url"></string>
+    <string name="card_fonts_title">Fuentes</string>
+    <string name="card_fonts_text">Las fuentes usadas en esta aplicación han sido extraídas de Google Fonts.
+        \nLista de fuentes usadas:
+        \n· Fredericka the Great
+        \n· Slabo</string>
+    <string name="card_fonts_button">Puedes obtener estas y muchas más fuentes para cualquier tipo de proyecto en Google Fonts pulsando aquí: </string>
+    <string name="card_fonts_url">https://www.google.com/fonts</string>
+    <string name="card_arc_layout_title">ArcLayout</string>
+    <string name="card_arc_layout_text">Librería usada para el layout en arco de la tirada de dados ha sido realizada por ogaclejapan.</string>
+    <string name="card_arc_layout_button">Puedes acceder al repositorio, con documentación y aplicación de ejemplo, en github aquí: </string>
+    <string name="card_arc_layout_url">https://github.com/ogaclejapan/ArcLayout</string>
+    <string name="card_calligraphy_title">Calligraphy</string>
+    <string name="card_calligraphy_text">Librería usada para facilitar el uso de fuentes customizadas, realizada por chrisjenx.</string>
+    <string name="card_calligraphy_button">Puedes acceder al repositorio, con documentación y ejemplos, en github aquí: </string>
+    <string name="card_calligraphy_url">https://github.com/chrisjenx/Calligraphy</string>
 </resources>

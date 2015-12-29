@@ -2,9 +2,10 @@
 <resources>
     <color name="color_primary">#FF9800</color>
     <color name="color_primary_dark">#F57C00</color>
-    <color name="color_accent">#00B0FF</color>
+    <color name="color_accent">#0091EA</color>
     <color name="color_primary_transparent">#BBFF9800</color>
     <color name="color_primary_dark_transparent">#BBF57C00</color>
-    <color name="holo_accent">#BB00B0FF</color>
+    <color name="holo_accent">#BB0091EA</color>
     <color name="color_text_primary">#FFFFFF</color>
+    <color name="color_text_card_view">#222222</color>
 </resources>

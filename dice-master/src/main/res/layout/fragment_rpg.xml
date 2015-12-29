@@ -13,4 +13,57 @@
         android:scaleType="centerCrop"
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/rpg_fragment_single_throw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/normal_button"
+            android:text="@string/rpg_fragment_single_throw"
+            style="@style/normal_button"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/rpg_fragment_multiple_throws"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normal_button"
+            android:text="@string/rpg_fragment_multiple_throws"
+            style="@style/normal_button"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/rpg_fragment_initiative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normal_button"
+            android:text="@string/rpg_fragment_initiative"
+            style="@style/normal_button"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/rpg_fragment_critics_and_fumbles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/normal_button"
+            android:text="@string/rpg_fragment_critics_and_fumbles"
+            style="@style/normal_button"
+            />
+
+    </LinearLayout>
+
 </RelativeLayout>

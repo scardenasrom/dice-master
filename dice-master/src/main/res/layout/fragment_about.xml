@@ -1,8 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_primary_dark">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_author_title"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="@dimen/text_size_main_screen"
+                        fontPath="fonts/dosis.ttf"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/orange_line"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:text="@string/card_author_text"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/card_author_button"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/card_author_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/linked_in"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_photos_title"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="@dimen/text_size_main_screen"
+                        fontPath="fonts/dosis.ttf"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/orange_line"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:text="@string/card_photos_text"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/card_photos_button"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/card_photos_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/deviant_art"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_fonts_title"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="@dimen/text_size_main_screen"
+                        fontPath="fonts/dosis.ttf"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/orange_line"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:text="@string/card_fonts_text"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/card_fonts_button"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/card_fonts_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/google_fonts"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_arc_layout_title"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="@dimen/text_size_main_screen"
+                        fontPath="fonts/dosis.ttf"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/orange_line"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:text="@string/card_arc_layout_text"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/card_arc_layout_button"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/card_arc_layout_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/git_hub"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_calligraphy_title"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="@dimen/text_size_main_screen"
+                        fontPath="fonts/dosis.ttf"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/orange_line"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_content_margin"
+                        android:text="@string/card_calligraphy_text"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/card_calligraphy_button"
+                        android:textColor="@color/color_text_card_view"
+                        android:textSize="16sp"
+                        fontPath="fonts/slabo.ttf"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/card_calligraphy_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/git_hub"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>

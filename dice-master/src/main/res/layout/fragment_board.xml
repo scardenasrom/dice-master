@@ -23,18 +23,20 @@
         >
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/board_fragment_one_vs_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/normal_button"
             android:text="@string/board_one_vs_one"
             style="@style/normal_button"
             />
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/board_fragment_several_players"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/normal_button"
             android:text="@string/board_several_players"
             style="@style/normal_button"

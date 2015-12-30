@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/holo_accent" />
-    <stroke android:width="5dp" android:color="@color/holo_accent" />
+    <solid android:color="@color/color_accent" />
+    <stroke android:width="2dp" android:color="@color/color_accent" />
     <corners android:radius="5dp" />
     <padding android:bottom="10dp" android:top="10dp" android:left="5dp" android:right="5dp" />
 </shape>

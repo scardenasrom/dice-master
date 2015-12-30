@@ -37,4 +37,16 @@
     <string name="card_calligraphy_text">Librería usada para facilitar el uso de fuentes customizadas, realizada por chrisjenx.</string>
     <string name="card_calligraphy_button">Puedes acceder al repositorio, con documentación y ejemplos, en github aquí: </string>
     <string name="card_calligraphy_url">https://github.com/chrisjenx/Calligraphy</string>
+
+    <!-- Single Throw -->
+    <string name="single_throw_name">Tirada Única</string>
+
+    <!-- Multiple Throws -->
+    <string name="multiple_throws_name">Tiradas Múltiples</string>
+
+    <!-- Initiative -->
+    <string name="initiative_name">Tabla de Iniciativa</string>
+
+    <!-- Critics and Fumbles -->
+    <string name="critics_and_fumbles_name">Críticos y Pifias</string>
 </resources>

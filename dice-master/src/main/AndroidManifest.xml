@@ -25,6 +25,27 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".activity.rpg.CriticsAndFumblesActivity_"
+            android:label="@string/critics_and_fumbles_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.rpg.InitiativeActivity_"
+            android:label="@string/initiative_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.rpg.SingleThrowActivity_"
+            android:label="@string/single_throw_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
     </application>
 
 </manifest>

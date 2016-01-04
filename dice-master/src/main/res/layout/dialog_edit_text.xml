@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_body"
+    >
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/dialog_edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_title"
+            android:gravity="center"
+            android:padding="@dimen/activity_content_margin"
+            android:textColor="@color/color_text_primary"
+            android:textSize="22sp"
+            fontPath="fonts/dosis.ttf"
+            tools:text="TÍTULO DE EJEMPLO"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="80dp"
+            android:minWidth="250dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/dialog_edit_text_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:singleLine="false"
+                android:textColor="@color/color_text_card_view"
+                android:textSize="16sp"
+                fontPath="fonts/slabo.ttf"
+                tools:text="Introduzca el nombre del Jugador Uno"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dialog_edit_text_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/dialog_edit_text_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    fontPath="fonts/slabo.ttf"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/dialog_edit_text_neg_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_button"
+                android:textColor="@color/color_text_card_view"
+                android:textSize="14sp"
+                fontPath="fonts/slabo.ttf"
+                tools:text="Cancelar"
+                />
+
+            <Button
+                android:id="@+id/dialog_edit_text_pos_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_button"
+                android:textColor="@color/color_accent"
+                android:textSize="14sp"
+                fontPath="fonts/slabo.ttf"
+                tools:text="Aceptar"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

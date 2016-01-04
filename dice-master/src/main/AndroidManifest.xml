@@ -46,6 +46,27 @@
             >
         </activity>
 
+        <activity
+            android:name=".activity.rpg.MultipleThrowsActivity_"
+            android:label="@string/multiple_throws_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.board.OneVsOneActivity_"
+            android:label="@string/one_vs_one_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
+        <activity
+            android:name=".activity.board.SeveralPlayersActivity_"
+            android:label="@string/several_players_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
     </application>
 
 </manifest>

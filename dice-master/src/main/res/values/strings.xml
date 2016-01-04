@@ -38,6 +38,22 @@
     <string name="card_calligraphy_button">Puedes acceder al repositorio, con documentación y ejemplos, en github aquí: </string>
     <string name="card_calligraphy_url">https://github.com/chrisjenx/Calligraphy</string>
 
+    <!-- One Vs One -->
+    <string name="one_vs_one_name">Uno Contra Uno</string>
+    <string name="one_vs_one_player_one_name">Jugador Uno</string>
+    <string name="one_vs_one_player_one_dialog_title">Nombre de Jugador Uno</string>
+    <string name="one_vs_one_player_one_dialog_text">Escoja un nombre para el jugador uno: </string>
+    <string name="one_vs_one_player_one_neg_button">Cancelar</string>
+    <string name="one_vs_one_player_one_pos_button">Aceptar</string>
+    <string name="one_vs_one_player_two_name">Jugador Dos</string>
+    <string name="one_vs_one_player_two_dialog_title">Nombre de Jugador Dos</string>
+    <string name="one_vs_one_player_two_dialog_text">Escoja un nombre para el jugador dos: </string>
+    <string name="one_vs_one_player_two_neg_button">Cancelar</string>
+    <string name="one_vs_one_player_two_pos_button">Aceptar</string>
+
+    <!-- Several Players -->
+    <string name="several_players_name">Varios Jugadores</string>
+
     <!-- Single Throw -->
     <string name="single_throw_name">Tirada Única</string>
 

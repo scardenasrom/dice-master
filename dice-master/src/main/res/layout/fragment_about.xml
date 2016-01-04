@@ -36,9 +36,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/card_author_title"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="@dimen/text_size_main_screen"
-                        fontPath="fonts/dosis.ttf"
+                        style="@style/about_card_title"
                         />
 
                     <View
@@ -54,9 +52,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:text="@string/card_author_text"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <TextView
@@ -64,9 +60,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:text="@string/card_author_button"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <ImageButton
@@ -101,9 +95,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/card_photos_title"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="@dimen/text_size_main_screen"
-                        fontPath="fonts/dosis.ttf"
+                        style="@style/about_card_title"
                         />
 
                     <View
@@ -119,9 +111,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:text="@string/card_photos_text"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <TextView
@@ -129,9 +119,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:text="@string/card_photos_button"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <ImageButton
@@ -166,9 +154,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/card_fonts_title"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="@dimen/text_size_main_screen"
-                        fontPath="fonts/dosis.ttf"
+                        style="@style/about_card_title"
                         />
 
                     <View
@@ -184,9 +170,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:text="@string/card_fonts_text"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <TextView
@@ -194,9 +178,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:text="@string/card_fonts_button"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <ImageButton
@@ -231,9 +213,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/card_arc_layout_title"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="@dimen/text_size_main_screen"
-                        fontPath="fonts/dosis.ttf"
+                        style="@style/about_card_title"
                         />
 
                     <View
@@ -249,9 +229,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:text="@string/card_arc_layout_text"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <TextView
@@ -259,9 +237,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:text="@string/card_arc_layout_button"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <ImageButton
@@ -296,9 +272,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/card_calligraphy_title"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="@dimen/text_size_main_screen"
-                        fontPath="fonts/dosis.ttf"
+                        style="@style/about_card_title"
                         />
 
                     <View
@@ -314,9 +288,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:text="@string/card_calligraphy_text"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <TextView
@@ -324,9 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
                         android:text="@string/card_calligraphy_button"
-                        android:textColor="@color/color_text_card_view"
-                        android:textSize="16sp"
-                        fontPath="fonts/slabo.ttf"
+                        style="@style/about_card_text"
                         />
 
                     <ImageButton

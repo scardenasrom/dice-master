@@ -1,11 +1,8 @@
 package com.herkiusdev.dicemaster.activity.board;
 
 import android.content.Context;
-import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.TextView;
 
@@ -78,12 +75,12 @@ public class OneVsOneActivity extends AppCompatActivity {
         playerOneDialog.show();
     }
 
-    @Click(R.id.one_vs_one_player_two_name)
-    public void changePlayerTwoName() {
-        final EditTextDialog playerTwoDialog = new EditTextDialog(OneVsOneActivity.this);
-        playerTwoDialog.setTitle(R.string.one_vs_one_player_two_dialog_title);
-        playerTwoDialog.setText(R.string.one_vs_one_player_two_dialog_text);
-        playerTwoDialog.setNegativeButtonText(R.string.one_vs_one_player_two_neg_button);
-    }
+//    @Click(R.id.one_vs_one_player_two_name)
+//    public void changePlayerTwoName() {
+//        final EditTextDialog playerTwoDialog = new EditTextDialog(OneVsOneActivity.this);
+//        playerTwoDialog.setTitle(R.string.one_vs_one_player_two_dialog_title);
+//        playerTwoDialog.setText(R.string.one_vs_one_player_two_dialog_text);
+//        playerTwoDialog.setNegativeButtonText(R.string.one_vs_one_player_two_neg_button);
+//    }
 
 }

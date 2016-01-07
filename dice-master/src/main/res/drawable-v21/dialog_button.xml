@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/color_accent"
+    android:color="@color/holo_accent"
     >
-    <item android:drawable="@drawable/dialog_button_normal" />
+    <selector>
+        <item>
+            <color android:color="@android:color/transparent" />
+        </item>
+    </selector>
 </ripple>

@@ -50,6 +50,13 @@
     <string name="one_vs_one_player_two_dialog_text">Escoja un nombre para el jugador dos: </string>
     <string name="one_vs_one_player_two_neg_button">Cancelar</string>
     <string name="one_vs_one_player_two_pos_button">Aceptar</string>
+    <string name="one_vs_one_player_increase_score">+</string>
+    <string name="one_vs_one_player_decrease_score">-</string>
+    <string name="one_vs_one_default_score">0</string>
+    <string name="one_vs_one_player_one_score_dialog_title">Puntuación de Jugador Uno</string>
+    <string name="one_vs_one_player_one_score_dialog_text">Introduce la puntuación del jugador uno: </string>
+    <string name="one_vs_one_player_two_score_dialog_title">Puntuación de Jugador Dos</string>
+    <string name="one_vs_one_player_two_score_dialog_text">Introduce la puntuación del jugador dos: </string>
 
     <!-- Several Players -->
     <string name="several_players_name">Varios Jugadores</string>

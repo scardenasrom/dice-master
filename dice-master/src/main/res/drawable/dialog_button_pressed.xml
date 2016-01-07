@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/holo_accent" />
+    <!--<padding
+        android:bottom="@dimen/activity_content_margin"
+        android:left="@dimen/activity_content_margin"
+        android:right="@dimen/activity_content_margin"
+        android:top="@dimen/activity_content_margin" />-->
 </shape>

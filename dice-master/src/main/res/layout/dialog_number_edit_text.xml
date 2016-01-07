@@ -12,7 +12,8 @@
         android:id="@+id/dialog_edit_text_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textNoSuggestions"
+        android:inputType="numberSigned"
+        android:maxLength="6"
         />
 
 </LinearLayout>

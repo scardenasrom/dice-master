@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view_board_player_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            >
+
+            <TextView
+                android:id="@+id/view_board_player_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                tools:text="Herkius"
+                android:textSize="22sp"
+                android:textColor="@color/color_primary_dark"
+                fontPath="fonts/ArchitectsDaughter.ttf"
+                />
+
+            <Button
+                android:id="@+id/view_board_player_decrease_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/round_card_button"
+                android:stateListAnimator="@null"
+                android:text="@string/one_vs_one_player_decrease_score"
+                android:textColor="@color/color_primary_dark"
+                android:textSize="22sp"
+                fontPath="fonts/ArchitectsDaughter.ttf"
+                />
+
+            <EditText
+                android:id="@+id/view_board_player_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:inputType="numberSigned"
+                android:textColor="@color/color_primary_dark"
+                android:textSize="22sp"
+                fontPath="fonts/ArchitectsDaughter.ttf"
+                />
+
+            <Button
+                android:id="@+id/view_board_player_increase_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/round_card_button"
+                android:stateListAnimator="@null"
+                android:text="@string/one_vs_one_player_increase_score"
+                android:textColor="@color/color_primary_dark"
+                android:textSize="22sp"
+                fontPath="fonts/ArchitectsDaughter.ttf"
+                />
+
+            <ImageButton
+                android:id="@+id/view_board_player_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/activity_content_margin"
+                android:background="@drawable/round_card_button"
+                android:layout_gravity="center_vertical"
+                android:stateListAnimator="@null"
+                android:src="@drawable/ic_delete"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

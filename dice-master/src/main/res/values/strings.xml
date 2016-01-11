@@ -60,6 +60,11 @@
 
     <!-- Several Players -->
     <string name="several_players_name">Varios Jugadores</string>
+    <string name="several_players_new_player_dialog_title">Nuevo Jugador</string>
+    <string name="several_players_new_player_dialog_text">Introduce el nombre del nuevo jugador: </string>
+    <string name="several_players_delete_player_dialog_title">Eliminar Jugador</string>
+    <string name="several_players_delete_player_dialog_text">¿Desea eliminar al jugador %s?</string>
+    <string name="several_players_go_back">Pulse atrás de nuevo para salir de la pantalla</string>
 
     <!-- Single Throw -->
     <string name="single_throw_name">Tirada Única</string>

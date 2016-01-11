@@ -3,6 +3,8 @@ package com.herkiusdev.dicemaster.activity.board;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -39,6 +41,8 @@ public class OneVsOneActivity extends AppCompatActivity {
     @ViewById(R.id.one_vs_one_player_two_score)
     TextView playerTwoScore;
 
+    boolean doubleBack = false;
+
     @AfterViews
     public void initViews(){
         setupToolbar();
@@ -49,6 +53,25 @@ public class OneVsOneActivity extends AppCompatActivity {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
+    @Override
+    public void onBackPressed() {
+        if (doubleBack) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBack = true;
+        Snackbar.make(toolbar, R.string.several_players_go_back, Snackbar.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBack = false;
+            }
+        }, 2000);
+    }
+
     private void setupToolbar(){
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -57,7 +80,7 @@ public class OneVsOneActivity extends AppCompatActivity {
 
     @Click(R.id.one_vs_one_toolbar_back)
     public void goBack(){
-        finish();
+        onBackPressed();
     }
 
     @Click(R.id.one_vs_one_player_one_name)

@@ -77,4 +77,6 @@
 
     <!-- Critics and Fumbles -->
     <string name="critics_and_fumbles_name">Críticos y Pifias</string>
+    <string name="critics_and_fumbles_critical">¡20!</string>
+    <string name="critics_and_fumbles_fumble">¡1!</string>
 </resources>

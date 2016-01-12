@@ -311,7 +311,7 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
 
     @Click(R.id.critics_and_fumbles_toolbar_back)
     public void goBack(){
-        onBackPressed();
+        finish();
     }
     //endregion
 

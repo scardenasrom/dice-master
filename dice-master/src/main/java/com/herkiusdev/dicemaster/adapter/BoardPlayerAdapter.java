@@ -37,6 +37,7 @@ public class BoardPlayerAdapter extends RecyclerView.Adapter<BoardPlayerAdapter.
     public void onBindViewHolder(final BoardPlayerViewHolder holder, final int position) {
         holder.playerName.setText(playerList.get(position).getName());
         holder.playerScore.setText("" + playerList.get(position).getScore());
+        holder.playerScore.setBackgroundDrawable(null);
         holder.decreaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

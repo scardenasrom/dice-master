@@ -41,11 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/one_vs_one_toolbar_back"
-                    android:gravity="bottom"
-                    android:textAllCaps="true"
-                    android:textColor="@color/color_text_primary"
-                    android:textSize="@dimen/text_size_main_screen"
-                    fontPath="fonts/FrederickaTheGreat.ttf"
+                    style="@style/toolbar_title"
                     />
 
             </RelativeLayout>

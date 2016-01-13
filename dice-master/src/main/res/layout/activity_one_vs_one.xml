@@ -28,8 +28,8 @@
 
                 <android.support.v7.widget.AppCompatImageButton
                     android:id="@+id/one_vs_one_toolbar_back"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/toolbar_button_size"
+                    android:layout_height="@dimen/toolbar_button_size"
                     android:background="@drawable/toolbar_button"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_back"

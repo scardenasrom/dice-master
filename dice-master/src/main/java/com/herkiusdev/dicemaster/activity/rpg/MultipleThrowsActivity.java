@@ -34,7 +34,8 @@ public class MultipleThrowsActivity extends AppCompatActivity {
 
     private void setupToolbar(){
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbarTitle.setText(getText(R.string.multiple_throws_name));
     }
 

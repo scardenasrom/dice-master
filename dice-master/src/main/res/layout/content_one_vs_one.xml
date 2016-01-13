@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_primary_dark"
     android:orientation="vertical"
+    android:background="@color/color_primary_dark"
     android:padding="@dimen/activity_content_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_one_vs_one"
@@ -16,28 +16,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="5dp"
+        android:layout_margin="@dimen/one_vs_one_card_margin"
+        app:cardCornerRadius="@dimen/board_player_card_corner_radius"
+        app:cardElevation="@dimen/board_player_card_elevation"
+        app:cardUseCompatPadding="true"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp"
+            android:padding="@dimen/one_vs_one_card_margin"
             >
 
             <TextView
                 android:id="@+id/one_vs_one_player_one_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:singleLine="true"
                 android:text="@string/one_vs_one_player_one_name"
-                android:textSize="28sp"
-                android:textColor="@color/color_primary_dark"
-                fontPath="fonts/ArchitectsDaughter.ttf"
+                style="@style/one_vs_one_player_name"
                 />
 
             <LinearLayout
@@ -58,26 +55,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@drawable/round_card_button"
-                        android:layout_gravity="center_horizontal"
-                        android:stateListAnimator="@null"
                         android:text="@string/one_vs_one_player_increase_score"
-                        android:textColor="@color/color_primary"
-                        android:textSize="32sp"
-                        fontPath="fonts/ArchitectsDaughter.ttf"
+                        style="@style/one_vs_one_player_button"
                         />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/one_vs_one_player_one_score"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:singleLine="true"
                         android:text="@string/one_vs_one_default_score"
-                        android:textColor="@color/color_primary"
-                        android:textSize="32sp"
-                        fontPath="fonts/indieflower.ttf"
+                        style="@style/one_vs_one_score"
                         />
 
                     <Button
@@ -85,13 +73,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@drawable/round_card_button"
-                        android:layout_gravity="center_horizontal"
-                        android:stateListAnimator="@null"
                         android:text="@string/one_vs_one_player_decrease_score"
-                        android:textColor="@color/color_primary"
-                        android:textSize="32sp"
-                        fontPath="fonts/ArchitectsDaughter.ttf"
+                        style="@style/one_vs_one_player_button"
                         />
 
                 </LinearLayout>
@@ -116,28 +99,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="5dp"
+        android:layout_margin="@dimen/one_vs_one_card_margin"
+        app:cardCornerRadius="@dimen/board_player_card_corner_radius"
+        app:cardElevation="@dimen/board_player_card_elevation"
+        app:cardUseCompatPadding="true"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp"
+            android:padding="@dimen/one_vs_one_card_margin"
             >
 
             <TextView
                 android:id="@+id/one_vs_one_player_two_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:singleLine="true"
                 android:text="@string/one_vs_one_player_two_name"
-                android:textSize="28sp"
-                android:textColor="@color/color_primary_dark"
-                fontPath="fonts/ArchitectsDaughter.ttf"
+                style="@style/one_vs_one_player_name"
                 />
 
             <LinearLayout
@@ -158,26 +138,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@drawable/round_card_button"
-                        android:layout_gravity="center_horizontal"
-                        android:stateListAnimator="@null"
                         android:text="@string/one_vs_one_player_increase_score"
-                        android:textColor="@color/color_primary"
-                        android:textSize="32sp"
-                        fontPath="fonts/ArchitectsDaughter.ttf"
+                        style="@style/one_vs_one_player_button"
                         />
 
-                    <TextView
+                    <EditText
                         android:id="@+id/one_vs_one_player_two_score"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:singleLine="true"
                         android:text="@string/one_vs_one_default_score"
-                        android:textColor="@color/color_primary"
-                        android:textSize="32sp"
-                        fontPath="fonts/indieflower.ttf"
+                        style="@style/one_vs_one_score"
                         />
 
                     <Button
@@ -185,13 +156,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
-                        android:background="@drawable/round_card_button"
-                        android:layout_gravity="center_horizontal"
-                        android:stateListAnimator="@null"
                         android:text="@string/one_vs_one_player_decrease_score"
-                        android:textColor="@color/color_primary"
-                        android:textSize="32sp"
-                        fontPath="fonts/ArchitectsDaughter.ttf"
+                        style="@style/one_vs_one_player_button"
                         />
 
                 </LinearLayout>

@@ -11,10 +11,20 @@
     <dimen name="custom_tab_layout_height">72dp</dimen>
     <dimen name="height_tab_indicator">3dp</dimen>
     <!-- Custom measurements -->
-    <dimen name="toolbar_button_width">50dp</dimen>
-    <!-- Text Sizes -->
-    <dimen name="text_size_main_toolbar_title">28sp</dimen>
-    <dimen name="text_size_toolbar_title">22sp</dimen>
+    <dimen name="main_toolbar_title_margin">72dp</dimen>
+    <dimen name="main_toolbar_height">70dp</dimen>
+    <dimen name="toolbar_button_size">50dp</dimen>
+    <dimen name="critical_fumble_button_size">75dp</dimen>
+    <!-- Cards measurements -->
+    <dimen name="critical_card_margin">50dp</dimen>
+    <dimen name="critical_card_elevation">15dp</dimen>
+    <dimen name="board_player_card_corner_radius">4dp</dimen>
+    <dimen name="board_player_card_elevation">5dp</dimen>
+    <dimen name="one_vs_one_card_margin">4dp</dimen>
+    <!-- Text sizes -->
+    <dimen name="text_size_large_characters">32sp</dimen>
+    <dimen name="text_size_greater_title">28sp</dimen>
+    <dimen name="text_size_smaller_title">22sp</dimen>
     <dimen name="text_size_card_text">16sp</dimen>
     <dimen name="text_size_tab_text">14sp</dimen>
 </resources>

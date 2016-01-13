@@ -87,7 +87,8 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
 
     private void setupToolbar(){
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbarTitle.setText(getText(R.string.critics_and_fumbles_name));
     }
 

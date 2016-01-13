@@ -23,23 +23,23 @@ public class FadePageTransformer implements ViewPager.PageTransformer {
         }
     }
 
-    private static final float getAlpha(final float position) {
+    private static float getAlpha(final float position) {
         return getSlowQuadraticAlpha(position);
     }
 
-    private static final float getLinearAlpha(final float position) {
+    private static float getLinearAlpha(final float position) {
         if (position <= 0) {
             return 1 + position;
         }
         return 1 - position;
     }
 
-    private static final float getFastQuadraticAlpha(final float position) {
+    private static float getFastQuadraticAlpha(final float position) {
         final float linearAlpha = getLinearAlpha(position);
         return linearAlpha * linearAlpha;
     }
 
-    private static final float getSlowQuadraticAlpha(final float position) {
+    private static float getSlowQuadraticAlpha(final float position) {
         return 1 - position * position;
     }
 }

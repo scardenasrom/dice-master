@@ -11,7 +11,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -56,26 +55,32 @@ public class SeveralPlayersActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (doubleBack) {
+        if (playerRecyclerView.getAdapter().getItemCount() > 0) {
+            if (doubleBack) {
+                super.onBackPressed();
+                return;
+            }
+
+            this.doubleBack = true;
+            Snackbar.make(toolbar, R.string.several_players_go_back, Snackbar.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBack = false;
+                }
+            }, 2000);
+        } else {
             super.onBackPressed();
             return;
         }
-
-        this.doubleBack = true;
-        Snackbar.make(toolbar, R.string.several_players_go_back, Snackbar.LENGTH_SHORT).show();
-
-        new Handler().postDelayed(new Runnable() {
-
-            @Override
-            public void run() {
-                doubleBack = false;
-            }
-        }, 2000);
     }
 
     private void setupToolbar() {
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbarTitle.setText(getText(R.string.several_players_name));
     }
 
@@ -122,13 +127,8 @@ public class SeveralPlayersActivity extends AppCompatActivity {
         AlertDialog b = dialogBuilder.create();
         b.show();
 
-        Button negBtn = b.getButton(DialogInterface.BUTTON_NEGATIVE);
-        if(negBtn != null)
-            negBtn.setTextColor(getResources().getColor(R.color.color_text_card_view));
-
-        Button posBtn = b.getButton(DialogInterface.BUTTON_POSITIVE);
-        if (posBtn != null)
-            posBtn.setTextColor(getResources().getColor(R.color.color_accent));
+        b.getButton(DialogInterface.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.color_text_card_view));
+        b.getButton(DialogInterface.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.color_accent));
     }
 
 }

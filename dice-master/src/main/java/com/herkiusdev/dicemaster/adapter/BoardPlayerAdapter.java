@@ -55,9 +55,6 @@ public class BoardPlayerAdapter extends RecyclerView.Adapter<BoardPlayerAdapter.
         holder.deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                playerList.remove(position);
-//                notifyItemRemoved(position);
-//                notifyItemRangeChanged(position, playerList.size());
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle(context.getText(R.string.several_players_delete_player_dialog_title));
                 builder.setMessage(context.getString(R.string.several_players_delete_player_dialog_text, playerList.get(position).getName()));
@@ -78,13 +75,8 @@ public class BoardPlayerAdapter extends RecyclerView.Adapter<BoardPlayerAdapter.
                 AlertDialog b = builder.create();
                 b.show();
 
-                Button negBtn = b.getButton(DialogInterface.BUTTON_NEGATIVE);
-                if(negBtn != null)
-                    negBtn.setTextColor(context.getResources().getColor(R.color.color_text_card_view));
-
-                Button posBtn = b.getButton(DialogInterface.BUTTON_POSITIVE);
-                if (posBtn != null)
-                    posBtn.setTextColor(context.getResources().getColor(R.color.color_accent));
+                b.getButton(DialogInterface.BUTTON_NEGATIVE).setTextColor(context.getResources().getColor(R.color.color_text_card_view));
+                b.getButton(DialogInterface.BUTTON_POSITIVE).setTextColor(context.getResources().getColor(R.color.color_accent));
             }
         });
     }

@@ -5,10 +5,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.herkiusdev.dicemaster.adapter.ViewPagerAdapter;
@@ -50,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupToolbar() {
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbarTitle.setText(getText(R.string.app_name).toString());
     }
 
@@ -67,20 +65,29 @@ public class MainActivity extends AppCompatActivity {
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
         tabOne.setText(getText(R.string.board_fragment_name).toString());
         tabOne.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.selector_board_gaming, 0, 0);
-        tabLayout.getTabAt(0).setCustomView(tabOne);
+        TabLayout.Tab tab1 = tabLayout.getTabAt(0);
+        if (tab1 != null)
+            tab1.setCustomView(tabOne);
 
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
         tabTwo.setText(getText(R.string.rpg_fragment_name).toString());
         tabTwo.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.selector_rpg_gaming, 0, 0);
-        tabLayout.getTabAt(1).setCustomView(tabTwo);
+        TabLayout.Tab tab2 = tabLayout.getTabAt(1);
+        if (tab2 != null)
+            tab2.setCustomView(tabTwo);
 
         TextView tabThree = (TextView) LayoutInflater.from(this).inflate(R.layout.view_custom_tab, null);
         tabThree.setText(getText(R.string.about_fragment_name).toString());
         tabThree.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.selector_about, 0, 0);
-        tabLayout.getTabAt(2).setCustomView(tabThree);
+        TabLayout.Tab tab3 = tabLayout.getTabAt(2);
+        if (tab3 != null)
+            tab3.setCustomView(tabThree);
 
-        tabLayout.getTabAt(1).select();
-        tabLayout.getTabAt(0).select();
+        if (tab1 != null && tab2 != null) {
+            tab2.select();
+            tab1.select();
+        }
+
     }
 
 }

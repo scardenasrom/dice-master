@@ -11,7 +11,7 @@ public class AnimatorUtils {
     public static final String TRANSLATION_Y = "translationY";
 
     private AnimatorUtils() {
-        //No instances.
+
     }
 
     public static PropertyValuesHolder rotation(float... values) {

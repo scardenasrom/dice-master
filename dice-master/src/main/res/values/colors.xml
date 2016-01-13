@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Theme Colors -->
     <color name="color_primary">#FF9800</color>
     <color name="color_primary_dark">#F57C00</color>
     <color name="color_accent">#0091EA</color>
+    <!-- Theme with transparencies -->
     <color name="color_primary_transparent">#BBFF9800</color>
     <color name="color_primary_dark_transparent">#BBF57C00</color>
-    <color name="holo_accent">#BB0091EA</color>
+    <color name="color_accent_transparent">#BB0091EA</color>
+    <!-- Text Colors -->
     <color name="color_text_primary">#FFFFFF</color>
     <color name="color_text_primary_semitransparent">#BBFFFFFF</color>
     <color name="color_text_card_view">#222222</color>

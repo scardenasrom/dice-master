@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/several_players_main_layout"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/color_primary_dark"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_one_vs_one"
@@ -16,10 +16,6 @@
         android:id="@+id/several_players_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-
-
-
-    </android.support.v7.widget.RecyclerView>
+        />
 
 </LinearLayout>

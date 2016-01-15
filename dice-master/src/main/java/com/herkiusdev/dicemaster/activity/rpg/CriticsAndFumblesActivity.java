@@ -15,6 +15,7 @@ import android.view.animation.AnticipateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.herkiusdev.dicemaster.R;
@@ -46,6 +47,10 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
     CardView criticCard;
     @ViewById(R.id.critics_and_fumbles_card_top_button)
     ImageButton cardButton;
+    @ViewById(R.id.critics_and_fumbles_card_top_row)
+    RelativeLayout cardTopRow;
+    @ViewById(R.id.critics_and_fumbles_card_title)
+    TextView cardTitle;
     //endregion
 
     //region Critics
@@ -130,6 +135,26 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
     @Click(R.id.critics_and_fumbles_magic_crit)
     public void magicCrit() {
         deliverCrit(CRIT_MAGIC, true);
+    }
+
+    @Click(R.id.critics_and_fumbles_sword_fumble)
+    public void swordFumble() {
+        deliverCrit(CRIT_SWORD, false);
+    }
+
+    @Click(R.id.critics_and_fumbles_hammer_fumble)
+    public void hammerFumble() {
+        deliverCrit(CRIT_HAMMER, false);
+    }
+
+    @Click(R.id.critics_and_fumbles_arrow_fumble)
+    public void arrowFumble() {
+        deliverCrit(CRIT_ARROW, false);
+    }
+
+    @Click(R.id.critics_and_fumbles_magic_fumble)
+    public void magicFumble() {
+        deliverCrit(FUMBLE_MAGIC, false);
     }
 
     //region Animations
@@ -316,11 +341,12 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
     }
     //endregion
 
-    private void deliverCrit(int critType, boolean isCritical) {
+    private void deliverCrit(final int critType, final boolean isCritical) {
         // Set the card visible
         criticCard.setVisibility(View.VISIBLE);
         // Load the Card button:
         if (isCritical) {
+            cardButton.setBackgroundResource(R.drawable.critical_card_button);
             switch (critType) {
                 case CRIT_SWORD:
                     cardButton.setImageResource(R.drawable.ic_sword_orange);
@@ -336,7 +362,35 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
                     break;
             }
         } else {
-
+            cardButton.setBackgroundResource(R.drawable.fumble_card_button);
+            switch (critType) {
+                case FUMBLE_SWORD:
+//                    cardButton.setImageResource(R.drawable.ic_sword_blue);
+                    break;
+                case FUMBLE_HAMMER:
+//                    cardButton.setImageResource(R.drawable.ic_hammer_blue);
+                    break;
+                case FUMBLE_ARROW:
+//                    cardButton.setImageResource(R.drawable.ic_arrow_blue);
+                    break;
+                case FUMBLE_MAGIC:
+//                    cardButton.setImageResource(R.drawable.ic_magic_blue);
+                    break;
+            }
+        }
+        cardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deliverCrit(critType, isCritical);
+            }
+        });
+        // Load the Card title:
+        if (isCritical) {
+            cardTopRow.setBackgroundColor(getResources().getColor(R.color.color_primary));
+            cardTitle.setText("Pulmón Perforado");
+        } else {
+            cardTopRow.setBackgroundColor(getResources().getColor(R.color.color_accent));
+            cardTitle.setText("Deflagración Arcana");
         }
     }
 

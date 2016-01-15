@@ -16,6 +16,8 @@
     <dimen name="toolbar_button_size">50dp</dimen>
     <dimen name="critical_fumble_button_size">75dp</dimen>
     <!-- Cards measurements -->
+    <dimen name="critical_card_double_raidus">60dp</dimen>
+    <dimen name="critical_card_radius">30dp</dimen>
     <dimen name="critical_card_margin">50dp</dimen>
     <dimen name="critical_card_elevation">15dp</dimen>
     <dimen name="board_player_card_corner_radius">4dp</dimen>
@@ -25,6 +27,7 @@
     <dimen name="text_size_large_characters">32sp</dimen>
     <dimen name="text_size_greater_title">28sp</dimen>
     <dimen name="text_size_smaller_title">22sp</dimen>
+    <dimen name="text_size_critical_card_title">18sp</dimen>
     <dimen name="text_size_card_text">16sp</dimen>
     <dimen name="text_size_tab_text">14sp</dimen>
 </resources>

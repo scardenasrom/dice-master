@@ -17,6 +17,7 @@
         android:visibility="gone"
         app:cardCornerRadius="@dimen/critical_card_radius"
         app:cardElevation="@dimen/critical_card_elevation"
+        tools:visibility="visible"
         >
 
         <RelativeLayout
@@ -55,6 +56,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:scaleType="centerInside"
                 />
 
         </RelativeLayout>

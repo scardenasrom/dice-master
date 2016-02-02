@@ -349,7 +349,7 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
             cardButton.setBackgroundResource(R.drawable.critical_card_button);
             switch (critType) {
                 case CRIT_SWORD:
-                    cardButton.setImageResource(R.drawable.ic_sword_orange);
+                    cardButton.setImageResource(R.drawable.ic_sword_original_orange);
                     break;
                 case CRIT_HAMMER:
                     cardButton.setImageResource(R.drawable.ic_hammer_orange);

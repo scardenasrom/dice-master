@@ -22,6 +22,8 @@ public class SingleThrowActivity extends AppCompatActivity {
     @ViewById(R.id.single_throw_toolbar_title)
     TextView toolbarTitle;
 
+
+
     @AfterViews
     public void initViews(){
         setupToolbar();

@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/scores_portrait"
+        android:src="@drawable/ic_scores_portrait"
         android:scaleType="centerCrop"
         />
 
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/normal_button"
+            android:background="@drawable/button_main_screen"
             android:text="@string/board_one_vs_one"
             style="@style/normal_button"
             />
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/normal_button"
+            android:background="@drawable/button_main_screen"
             android:text="@string/board_several_players"
             style="@style/normal_button"
             />

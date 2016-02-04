@@ -42,7 +42,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/orange_line"
+                        android:background="@drawable/line_orange"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:layout_marginTop="4dp"
                         />
@@ -69,7 +69,7 @@
                         android:layout_height="50dp"
                         android:background="@android:color/transparent"
                         android:scaleType="centerInside"
-                        android:src="@drawable/linked_in"
+                        android:src="@drawable/ic_linked_in"
                         />
 
                 </LinearLayout>
@@ -101,7 +101,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/orange_line"
+                        android:background="@drawable/line_orange"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:layout_marginTop="4dp"
                         />
@@ -128,7 +128,7 @@
                         android:layout_height="50dp"
                         android:background="@android:color/transparent"
                         android:scaleType="centerInside"
-                        android:src="@drawable/deviant_art"
+                        android:src="@drawable/ic_deviant_art"
                         />
 
                 </LinearLayout>
@@ -160,7 +160,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/orange_line"
+                        android:background="@drawable/line_orange"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:layout_marginTop="4dp"
                         />
@@ -187,7 +187,7 @@
                         android:layout_height="50dp"
                         android:background="@android:color/transparent"
                         android:scaleType="centerInside"
-                        android:src="@drawable/google_fonts"
+                        android:src="@drawable/ic_google_fonts"
                         />
 
                 </LinearLayout>
@@ -219,7 +219,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/orange_line"
+                        android:background="@drawable/line_orange"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:layout_marginTop="4dp"
                         />
@@ -246,7 +246,7 @@
                         android:layout_height="50dp"
                         android:background="@android:color/transparent"
                         android:scaleType="centerInside"
-                        android:src="@drawable/git_hub"
+                        android:src="@drawable/ic_git_hub"
                         />
 
                 </LinearLayout>
@@ -278,7 +278,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/orange_line"
+                        android:background="@drawable/line_orange"
                         android:layout_marginBottom="@dimen/activity_content_margin"
                         android:layout_marginTop="4dp"
                         />
@@ -305,7 +305,7 @@
                         android:layout_height="50dp"
                         android:background="@android:color/transparent"
                         android:scaleType="centerInside"
-                        android:src="@drawable/git_hub"
+                        android:src="@drawable/ic_git_hub"
                         />
 
                 </LinearLayout>

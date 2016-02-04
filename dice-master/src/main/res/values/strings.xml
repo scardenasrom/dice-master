@@ -77,7 +77,8 @@
     <string name="single_throw_d12">d12</string>
     <string name="single_throw_d20">d20</string>
     <string name="single_throw_d100">d100</string>
-    <string name="single_throw_result">¡ %s !</string>
+    <string name="single_throw_result">¡%s!</string>
+    <string name="single_throw_sound_button">Sonido</string>
 
     <!-- Multiple Throws -->
     <string name="multiple_throws_name">Tiradas Múltiples</string>

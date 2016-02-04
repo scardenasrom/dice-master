@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/main_screen_background"
+        android:src="@drawable/ic_main_screen_background"
         android:scaleType="centerCrop"
         />
 
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/normal_button"
+            android:background="@drawable/button_main_screen"
             android:text="@string/rpg_fragment_single_throw"
             style="@style/normal_button"
             />
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/normal_button"
+            android:background="@drawable/button_main_screen"
             android:text="@string/rpg_fragment_multiple_throws"
             style="@style/normal_button"
             />
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/normal_button"
+            android:background="@drawable/button_main_screen"
             android:text="@string/rpg_fragment_initiative"
             style="@style/normal_button"
             />
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/normal_button"
+            android:background="@drawable/button_main_screen"
             android:text="@string/rpg_fragment_critics_and_fumbles"
             style="@style/normal_button"
             />

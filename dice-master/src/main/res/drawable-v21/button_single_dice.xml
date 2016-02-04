@@ -3,5 +3,5 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:color="@color/color_accent"
     >
-    <item android:drawable="@drawable/round_card_button_normal" />
+    <item android:drawable="@drawable/round_dark" />
 </ripple>

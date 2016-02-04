@@ -125,11 +125,26 @@
             android:id="@+id/single_throw_dice_button"
             android:layout_width="76dp"
             android:layout_height="76dp"
-            android:background="@drawable/transparent_round_button"
+            android:background="@drawable/button_single_dice"
             android:padding="@dimen/activity_content_margin"
             android:scaleType="centerInside"
-            android:src="@drawable/d20_white_transparent"
+            android:src="@drawable/ic_d20_white_transparent"
             android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/single_throw_sound_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_sound_off"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:stateListAnimator="@null"
+            android:text="@string/single_throw_sound_button"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="@dimen/text_size_critical_card_title"
+            fontPath="fonts/dosis.ttf"
             />
 
     </RelativeLayout>

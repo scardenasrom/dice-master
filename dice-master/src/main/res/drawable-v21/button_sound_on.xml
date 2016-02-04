@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/color_text_primary_semitransparent"
+    android:color="@color/color_primary_dark"
     >
-    <item android:drawable="@drawable/arc_button_normal" />
+    <item android:drawable="@drawable/rectangle_sound_on" />
 </ripple>

@@ -30,7 +30,7 @@
                     android:id="@+id/multiple_throws_toolbar_back"
                     android:layout_width="@dimen/toolbar_button_size"
                     android:layout_height="@dimen/toolbar_button_size"
-                    android:background="@drawable/toolbar_button"
+                    android:background="@drawable/button_toolbar"
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_back"
                     />

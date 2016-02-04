@@ -2,9 +2,9 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_pressed="true"
-        android:drawable="@drawable/normal_button_selected"
+        android:drawable="@drawable/rectangle_pressed"
         />
     <item
-        android:drawable="@drawable/normal_button_normal"
+        android:drawable="@drawable/rectangle_dark"
         />
 </selector>

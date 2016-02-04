@@ -1,34 +1,23 @@
 package com.herkiusdev.dicemaster.activity.rpg;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.Context;
-import android.os.Handler;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.animation.AnticipateInterpolator;
-import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.herkiusdev.dicemaster.R;
-import com.herkiusdev.dicemaster.util.AnimatorUtils;
+import com.herkiusdev.dicemaster.service.AnimatorService;
 import com.ogaclejapan.arclayout.ArcLayout;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.ViewById;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -80,9 +69,12 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
     public static final int FUMBLE_ARROW = 7;
     public static final int FUMBLE_MAGIC = 8;
 
+    private AnimatorService animService;
+
     @AfterViews
     public void initViews(){
         setupToolbar();
+        animService = AnimatorService.getInstance();
     }
 
     @Override
@@ -100,9 +92,9 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
     @Click(R.id.critics_and_fumbles_critic)
     public void criticClick() {
         if (criticButton.isSelected()) {
-            hideCriticsMenu();
+            animService.hideMenu(criticsMenu, criticsArc, criticButton);
         } else {
-            showCriticsMenu();
+            animService.showMenu(criticsMenu, criticsArc, criticButton);
         }
         criticButton.setSelected(!criticButton.isSelected());
     }
@@ -110,9 +102,9 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
     @Click(R.id.critics_and_fumbles_fumble)
     public void fumbleClick() {
         if (fumbleButton.isSelected()) {
-            hideFumblesMenu();
+            animService.hideMenu(fumblesMenu, fumblesArc, fumbleButton);
         } else {
-            showFumblesMenu();
+            animService.showMenu(fumblesMenu, fumblesArc, fumbleButton);
         }
         fumbleButton.setSelected(!fumbleButton.isSelected());
     }
@@ -157,164 +149,6 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
         deliverCrit(FUMBLE_MAGIC, false);
     }
 
-    //region Animations
-    private void showCriticsMenu(){
-        criticsMenu.setVisibility(View.VISIBLE);
-
-        List<Animator> animList = new ArrayList<>();
-
-        for (int i = 0, len = criticsArc.getChildCount(); i < len; i++) {
-            animList.add(createShowItemAnimatorCritic(criticsArc.getChildAt(i)));
-        }
-
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.setDuration(400);
-        animSet.setInterpolator(new OvershootInterpolator());
-        animSet.playTogether(animList);
-        animSet.start();
-    }
-
-    private void showFumblesMenu() {
-        fumblesMenu.setVisibility(View.VISIBLE);
-
-        List<Animator> animList = new ArrayList<>();
-
-        for (int i = 0, len = fumblesArc.getChildCount(); i < len; i++) {
-            animList.add(createShowItemAnimatorFumble(fumblesArc.getChildAt(i)));
-        }
-
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.setDuration(400);
-        animSet.setInterpolator(new OvershootInterpolator());
-        animSet.playTogether(animList);
-        animSet.start();
-    }
-
-    private void hideCriticsMenu(){
-        List<Animator> animList = new ArrayList<>();
-
-        for (int i = criticsArc.getChildCount() - 1; i >= 0; i--) {
-            animList.add(createHideItemAnimatorCritic(criticsArc.getChildAt(i)));
-        }
-
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.setDuration(400);
-        animSet.setInterpolator(new AnticipateInterpolator());
-        animSet.playTogether(animList);
-        animSet.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                criticsMenu.setVisibility(View.INVISIBLE);
-            }
-        });
-        animSet.start();
-    }
-
-    private void hideFumblesMenu() {
-        List<Animator> animList = new ArrayList<>();
-
-        for (int i = fumblesArc.getChildCount() - 1; i >= 0; i--) {
-            animList.add(createHideItemAnimatorFumble(fumblesArc.getChildAt(i)));
-        }
-
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.setDuration(400);
-        animSet.setInterpolator(new AnticipateInterpolator());
-        animSet.playTogether(animList);
-        animSet.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                fumblesMenu.setVisibility(View.INVISIBLE);
-            }
-        });
-        animSet.start();
-    }
-
-    private Animator createShowItemAnimatorCritic(View item) {
-        float dx = criticButton.getX() - item.getX();
-        float dy = criticButton.getY() - item.getY();
-
-        item.setRotation(0f);
-        item.setTranslationX(dx);
-        item.setTranslationY(dy);
-
-        Animator anim = ObjectAnimator.ofPropertyValuesHolder(
-                item,
-                AnimatorUtils.rotation(0f, 720f),
-                AnimatorUtils.translationX(dx, 0f),
-                AnimatorUtils.translationY(dy, 0f)
-        );
-
-        return anim;
-    }
-
-    private Animator createShowItemAnimatorFumble(View item) {
-        float dx = fumbleButton.getX() - item.getX();
-        float dy = fumbleButton.getY() - item.getY();
-
-        item.setRotation(0f);
-        item.setTranslationX(dx);
-        item.setTranslationY(dy);
-
-        Animator anim = ObjectAnimator.ofPropertyValuesHolder(
-                item,
-                AnimatorUtils.rotation(0f, 720f),
-                AnimatorUtils.translationX(dx, 0f),
-                AnimatorUtils.translationY(dy, 0f)
-        );
-
-        return anim;
-    }
-
-    private Animator createHideItemAnimatorCritic(final View item) {
-        float dx = criticButton.getX() - item.getX();
-        float dy = criticButton.getY() - item.getY();
-
-        Animator anim = ObjectAnimator.ofPropertyValuesHolder(
-                item,
-                AnimatorUtils.rotation(720f, 0f),
-                AnimatorUtils.translationX(0f, dx),
-                AnimatorUtils.translationY(0f, dy)
-        );
-
-        anim.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                item.setTranslationX(0f);
-                item.setTranslationY(0f);
-            }
-        });
-
-        return anim;
-    }
-
-    private Animator createHideItemAnimatorFumble(final View item) {
-        float dx = fumbleButton.getX() - item.getX();
-        float dy = fumbleButton.getY() - item.getY();
-
-        Animator anim = ObjectAnimator.ofPropertyValuesHolder(
-                item,
-                AnimatorUtils.rotation(720f, 0f),
-                AnimatorUtils.translationX(0f, dx),
-                AnimatorUtils.translationY(0f, dy)
-        );
-
-        anim.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                item.setTranslationX(0f);
-                item.setTranslationY(0f);
-            }
-        });
-
-        return anim;
-    }
-    //endregion
-
     //region Going Back
     @Override
     public void onBackPressed() {
@@ -322,11 +156,11 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
             criticCard.setVisibility(View.GONE);
         } else {
             if (criticButton.isSelected()) {
-                hideCriticsMenu();
+                animService.hideMenu(criticsMenu, criticsArc, criticButton);
                 criticButton.setSelected(!criticButton.isSelected());
             } else {
                 if (fumbleButton.isSelected()) {
-                    hideFumblesMenu();
+                    animService.hideMenu(fumblesMenu, fumblesArc, fumbleButton);
                     fumbleButton.setSelected(!fumbleButton.isSelected());
                 } else {
                     finish();
@@ -346,7 +180,7 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
         criticCard.setVisibility(View.VISIBLE);
         // Load the Card button:
         if (isCritical) {
-            cardButton.setBackgroundResource(R.drawable.critical_card_button);
+            cardButton.setBackgroundResource(R.drawable.button_critical_card);
             switch (critType) {
                 case CRIT_SWORD:
                     cardButton.setImageResource(R.drawable.ic_sword_original_orange);
@@ -362,7 +196,7 @@ public class CriticsAndFumblesActivity extends AppCompatActivity{
                     break;
             }
         } else {
-            cardButton.setBackgroundResource(R.drawable.fumble_card_button);
+            cardButton.setBackgroundResource(R.drawable.button_fumble_card);
             switch (critType) {
                 case FUMBLE_SWORD:
 //                    cardButton.setImageResource(R.drawable.ic_sword_blue);

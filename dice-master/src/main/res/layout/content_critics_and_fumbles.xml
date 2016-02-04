@@ -98,7 +98,7 @@
                         android:id="@+id/critics_and_fumbles_sword_crit"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button"
+                        android:background="@drawable/button_arc"
                         android:src="@drawable/ic_sword"
                         app:arc_angle="30"
                         />
@@ -107,7 +107,7 @@
                         android:id="@+id/critics_and_fumbles_hammer_crit"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button"
+                        android:background="@drawable/button_arc"
                         android:src="@drawable/ic_hammer"
                         app:arc_angle="70"
                         />
@@ -116,7 +116,7 @@
                         android:id="@+id/critics_and_fumbles_arrow_crit"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button"
+                        android:background="@drawable/button_arc"
                         android:src="@drawable/ic_arrow"
                         app:arc_angle="110"
                         />
@@ -125,7 +125,7 @@
                         android:id="@+id/critics_and_fumbles_magic_crit"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button"
+                        android:background="@drawable/button_arc"
                         android:src="@drawable/ic_magic"
                         app:arc_angle="150"
                         />
@@ -138,7 +138,7 @@
                 android:id="@+id/critics_and_fumbles_critic"
                 android:layout_width="@dimen/critical_fumble_button_size"
                 android:layout_height="@dimen/critical_fumble_button_size"
-                android:background="@drawable/arc_button"
+                android:background="@drawable/button_arc"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/activity_horizontal_margin"
@@ -180,7 +180,7 @@
                         android:id="@+id/critics_and_fumbles_sword_fumble"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button_alt"
+                        android:background="@drawable/button_arc_alt"
                         android:src="@drawable/ic_sword"
                         app:arc_angle="30"
                         />
@@ -189,7 +189,7 @@
                         android:id="@+id/critics_and_fumbles_hammer_fumble"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button_alt"
+                        android:background="@drawable/button_arc_alt"
                         android:src="@drawable/ic_hammer"
                         app:arc_angle="70"
                         />
@@ -198,7 +198,7 @@
                         android:id="@+id/critics_and_fumbles_arrow_fumble"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button_alt"
+                        android:background="@drawable/button_arc_alt"
                         android:src="@drawable/ic_arrow"
                         app:arc_angle="110"
                         />
@@ -207,7 +207,7 @@
                         android:id="@+id/critics_and_fumbles_magic_fumble"
                         android:layout_width="@dimen/toolbar_button_size"
                         android:layout_height="@dimen/toolbar_button_size"
-                        android:background="@drawable/arc_button_alt"
+                        android:background="@drawable/button_arc_alt"
                         android:src="@drawable/ic_magic"
                         app:arc_angle="150"
                         />
@@ -220,7 +220,7 @@
                 android:id="@+id/critics_and_fumbles_fumble"
                 android:layout_width="@dimen/critical_fumble_button_size"
                 android:layout_height="@dimen/critical_fumble_button_size"
-                android:background="@drawable/arc_button_alt"
+                android:background="@drawable/button_arc_alt"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/activity_horizontal_margin"

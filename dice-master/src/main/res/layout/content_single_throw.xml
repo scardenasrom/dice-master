@@ -38,101 +38,83 @@
 
                 <Button
                     android:id="@+id/single_throw_d2"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d2"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="15"
+                    app:arc_angle="-70"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d3"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d3"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="30"
+                    app:arc_angle="-30"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d4"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d4"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="45"
+                    app:arc_angle="10"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d6"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d6"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="60"
+                    app:arc_angle="50"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d8"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d8"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="75"
+                    app:arc_angle="90"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d10"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d10"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="90"
+                    app:arc_angle="130"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d12"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d12"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="105"
+                    app:arc_angle="170"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d20"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d20"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="120"
+                    app:arc_angle="210"
+                    style="@style/single_throw_dice_button"
                     />
 
                 <Button
                     android:id="@+id/single_throw_d100"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/arc_button"
+                    android:layout_width="@dimen/single_throw_dice_button_size"
+                    android:layout_height="@dimen/single_throw_dice_button_size"
                     android:text="@string/single_throw_d100"
-                    android:textColor="@color/color_primary"
-                    android:textSize="@dimen/text_size_large_characters"
-                    app:arc_angle="135"
+                    app:arc_angle="250"
+                    style="@style/single_throw_dice_button"
                     />
 
             </com.ogaclejapan.arclayout.ArcLayout>
@@ -141,9 +123,11 @@
 
         <ImageButton
             android:id="@+id/single_throw_dice_button"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/transparent_round_button"
+            android:padding="@dimen/activity_content_margin"
+            android:scaleType="centerInside"
             android:src="@drawable/d20_white_transparent"
             android:layout_centerInParent="true"
             />
@@ -168,7 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="14"
+                android:padding="@dimen/activity_content_margin"
                 android:textSize="@dimen/text_size_large_characters"
                 android:textColor="@color/color_primary"
                 fontPath="fonts/ArchitectsDaughter.ttf"

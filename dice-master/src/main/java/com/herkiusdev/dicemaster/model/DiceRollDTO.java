@@ -3,11 +3,17 @@ package com.herkiusdev.dicemaster.model;
 public class DiceRollDTO {
 
     private int numberOfDie;
-    private int diceFaces;
+    private int numberOfSides;
+    private boolean modifierAdding;
     private int modifier;
+    private int result;
 
     public DiceRollDTO() {
-
+        this.numberOfDie = 0;
+        this.numberOfSides = 0;
+        this.modifierAdding = true;
+        this.modifier = 0;
+        this.result = 0;
     }
 
     public int getNumberOfDie() {
@@ -18,12 +24,20 @@ public class DiceRollDTO {
         this.numberOfDie = numberOfDie;
     }
 
-    public int getDiceFaces() {
-        return this.diceFaces;
+    public int getNumberOfSides() {
+        return this.numberOfSides;
     }
 
-    public void setDiceFaces(int diceFaces) {
-        this.diceFaces = diceFaces;
+    public void setNumberOfSides(int numberOfSides) {
+        this.numberOfSides = numberOfSides;
+    }
+
+    public boolean isModifierAdding() {
+        return this.modifierAdding;
+    }
+
+    public void setModifierAdding(boolean modifierAdding) {
+        this.modifierAdding = modifierAdding;
     }
 
     public int getModifier() {
@@ -32,6 +46,14 @@ public class DiceRollDTO {
 
     public void setModifier(int modifier) {
         this.modifier = modifier;
+    }
+
+    public int getResult() {
+        return this.result;
+    }
+
+    public void setResult(int result) {
+        this.result = result;
     }
 
 }

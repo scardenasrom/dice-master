@@ -52,4 +52,26 @@
 
     <include layout="@layout/content_multiple_throws" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/multiple_throws_add_roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@+id/multiple_throws_rolls_list"
+        app:layout_anchorGravity="top|right|end"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/multiple_throws_roll_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_d20_white_transparent"
+        app:layout_anchor="@+id/multiple_throws_rolls_list"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+
 </android.support.design.widget.CoordinatorLayout>

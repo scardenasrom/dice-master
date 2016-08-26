@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_primary"
+    tools:context="com.example.scardenas.dice_master.fragment.NewRollFragment"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/xsmall_spacing"
+        >
+
+        <TextView
+            android:id="@+id/new_roll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/new_roll_delete_last"
+            android:lines="1"
+            android:padding="@dimen/small_spacing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large"
+            />
+
+        <ImageView
+            android:id="@+id/new_roll_delete_last"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/selector_delete_last_button"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/new_roll_d2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_red_button"
+                android:text="@string/new_roll_d2"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_lime_button"
+                android:text="@string/new_roll_d3"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_indigo_button"
+                android:text="@string/new_roll_d4"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_green_button"
+                android:text="@string/new_roll_d6"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_cyan_button"
+                android:text="@string/new_roll_d8"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/new_roll_d10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_button"
+                android:text="@string/new_roll_d10"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_purple_button"
+                android:text="@string/new_roll_d12"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_yellow_button"
+                android:text="@string/new_roll_d20"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+            <Button
+                android:id="@+id/new_roll_d100"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_deep_orange_button"
+                android:text="@string/new_roll_d100"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_medium"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+            <Button
+                android:id="@+id/new_roll_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_9"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+            <Button
+                android:id="@+id/new_roll_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+            <Button
+                android:id="@+id/new_roll_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+            <Button
+                android:id="@+id/new_roll_minus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_minus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Button
+                android:id="@+id/new_roll_plus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_grey_button"
+                android:text="@string/new_roll_plus"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/new_roll_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_blue_button"
+                android:enabled="false"
+                android:text="@string/new_roll_button_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xlarge"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <ImageView
+                android:id="@+id/new_roll_clear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_clear_button"
+                />
+
+            <ImageView
+                android:id="@+id/new_roll_favourite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_favourite_button"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

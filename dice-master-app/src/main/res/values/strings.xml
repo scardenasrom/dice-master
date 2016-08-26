@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Dice Master</string>
+
+    <!-- New Roll -->
+    <string name="new_roll_fragment_title">New Roll</string>
+
+    <string name="new_roll_d2">d2</string>
+    <string name="new_roll_d3">d3</string>
+    <string name="new_roll_d4">d4</string>
+    <string name="new_roll_d6">d6</string>
+    <string name="new_roll_d8">d8</string>
+    <string name="new_roll_d10">d10</string>
+    <string name="new_roll_d12">d12</string>
+    <string name="new_roll_d20">d20</string>
+    <string name="new_roll_d30">d30</string>
+    <string name="new_roll_d100">d100</string>
+
+    <string name="new_roll_1">1</string>
+    <string name="new_roll_2">2</string>
+    <string name="new_roll_3">3</string>
+    <string name="new_roll_4">4</string>
+    <string name="new_roll_5">5</string>
+    <string name="new_roll_6">6</string>
+    <string name="new_roll_7">7</string>
+    <string name="new_roll_8">8</string>
+    <string name="new_roll_9">9</string>
+    <string name="new_roll_0">0</string>
+    <string name="new_roll_plus">+</string>
+    <string name="new_roll_plus_written">" + "</string>
+    <string name="new_roll_minus">-</string>
+    <string name="new_roll_minus_written">" - "</string>
+
+    <string name="new_roll_button_text">Roll!</string>
+
+    <string name="new_roll_favourite_saved">Roll saved successfully!</string>
+
+    <string name="roll_dialog_roll_again_button">ROLL AGAIN</string>
+    <string name="roll_dialog_close_dialog">OK</string>
+
+    <!-- Favourites -->
+    <string name="favourites_fragment_title">Favourites</string>
+
+    <string name="favourites_empty_list_text">You have no favourite rolls stored. Go save some!</string>
+
+    <string name="favourites_undo_snackbar_text">%s roll removed</string>
+    <string name="favourites_undo_snackbar_action">UNDO</string>
+
+    <string name="dialog_save_favourite_roll_title">Save Favourite Roll</string>
+    <string name="dialog_save_favourite_roll_name_hint">Roll Name</string>
+    <string name="dialog_save_favourite_roll_roll_label">Roll</string>
+    <string name="dialog_save_favourite_roll_neg_btn">Cancel</string>
+    <string name="dialog_save_favourite_roll_pos_btn">Save</string>
+
+    <string name="dialog_favourite_rolled_title">%1$s \n %2$s</string>
+
+    <!-- History -->
+    <string name="history_fragment_title">History</string>
+    <string name="history_clear_button">CLEAR HISTORY</string>
+    <string name="history_empty_list_text">You haven\'t performed any rolls! Go roll some dice!</string>
+    <string name="history_empty_list_snackbar">History cleared</string>
+    <string name="clear_history_dialog_title">Clear History</string>
+    <string name="clear_history_dialog_message">Do you want to erase all roll data stored in the device? This won\'t delete your favourite rolls.</string>
+    <string name="clear_history_dialog_neg_button">CANCEL</string>
+    <string name="clear_history_dialog_pos_button">OK</string>
+
+</resources>

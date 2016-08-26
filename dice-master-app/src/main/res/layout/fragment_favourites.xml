@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context="com.example.scardenas.dice_master.fragment.FavouritesFragment"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/favourites_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/favourites_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_primary_dark"
+        android:clickable="true"
+        android:padding="@dimen/large_spacing"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:layout_marginLeft="@dimen/large_spacing"
+                android:layout_marginRight="@dimen/large_spacing"
+                android:text="@string/favourites_empty_list_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                />
+
+            <ImageView
+                android:id="@+id/favourites_empty_list_button"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/selector_dark_blue_grey_button"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_go_left"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

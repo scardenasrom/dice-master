@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_primary_dark"
+    android:padding="@dimen/xsmall_spacing"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_spacing"
+        android:paddingLeft="@dimen/medium_spacing"
+        android:paddingRight="@dimen/medium_spacing"
+        android:paddingTop="@dimen/small_spacing"
+        android:text="@string/dialog_save_favourite_roll_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        />
+    
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/large_spacing"
+        android:paddingRight="@dimen/large_spacing"
+        android:paddingTop="@dimen/medium_spacing"
+        android:textColorHint="@color/white"
+        >
+        
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dialog_save_favourite_roll_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dialog_save_favourite_roll_name_hint"
+            android:inputType="text|textCapSentences"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+        
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_spacing"
+        android:paddingLeft="@dimen/large_spacing"
+        android:paddingRight="@dimen/large_spacing"
+        android:paddingTop="@dimen/medium_spacing"
+        android:textColorHint="@color/white"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dialog_save_favourite_roll_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="@string/dialog_save_favourite_roll_roll_label"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/dialog_save_favourite_roll_neg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_save_favourite_roll_neg_btn"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/dialog_save_favourite_roll_pos_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_save_favourite_roll_pos_btn"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

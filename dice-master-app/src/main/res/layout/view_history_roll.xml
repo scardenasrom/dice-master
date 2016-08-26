@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/history_roll_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_blue_grey_button"
+    android:padding="@dimen/small_spacing"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/history_roll_separator"
+        android:padding="@dimen/small_spacing"
+        >
+
+        <TextView
+            android:id="@+id/history_roll_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/history_roll_roll_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/history_roll_separator"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:background="@drawable/dark_grey_line"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/history_roll_result"
+        />
+
+    <TextView
+        android:id="@+id/history_roll_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/small_spacing"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_xlarge"
+        android:textStyle="bold"
+        tools:text="78"
+        />
+
+</RelativeLayout>
